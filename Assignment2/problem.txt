@@ -1,0 +1,39 @@
+# Refactor the below example codes.
+# Rails code
+
+# Example 1:
+def get_addresses
+  addresses = []
+  users = User.all
+  users.each do |user|
+    addresses << user.address if user.address.city.present?
+  end
+  addresses
+end
+
+# Example 2:
+class Greeting
+  def name=(value)
+    @name = value
+  end
+
+  def name
+    @name
+  end
+end
+
+# Example 3:
+def sum(a, b)
+  a + b
+end
+
+def sum(p, q, r)
+  p + q + r
+end
+
+def sum(x, y, z, w)
+  x + y + z + w
+end
+
+sum(2, 3) #=> 5
+sum(1,2,3,4) # => 10

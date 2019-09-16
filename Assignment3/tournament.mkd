@@ -1,0 +1,62 @@
+Output for this program would be based on cricket tournament.
+
+The input file/array contains list of inputs which specifies match between two teams like following.
+
+```text
+Team     | MP |  W |  D |  L |  P
+Team A   |  3 |  2 |  1 |  0 |  7
+Team B   |  3 |  2 |  0 |  1 |  6
+Team C   |  3 |  1 |  0 |  2 |  3
+Team D   |  3 |  0 |  1 |  2 |  1
+```
+
+What do those abbreviations mean?
+
+- MP: Matches Played
+- W: Matches Won
+- D: Matches Drawn
+- L: Matches Lost
+- P: Points
+
+A win earns a team 3 points. A draw earns 1. A loss earns 0.
+
+The outcome should be ordered by points, descending. In case of a tie, teams are ordered alphabetically.
+
+###
+
+Input
+
+Your program will receive input that looks like or initialize single array like following:
+
+```text
+Team B;Team C;win
+Team A;Team D;draw
+Team A;Team B;win
+Team D;Team C;loss
+Team C;Team A;loss
+Team B;Team D;win
+```
+
+The result of the match refers to the first team listed. So this line
+
+```text
+Team B;Team C;win
+```
+
+Means that the Team B beat the Team C.
+
+This line:
+
+```text
+Team D;Team C;loss
+```
+
+Means that the Team C beat the Team D.
+
+And this line:
+
+```text
+Team A;Team D;draw
+```
+
+Means that the Team A and Team D tied.
